@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[table]{xcolor}
+
+\definecolor{lightgray}{gray}{0.95}
+
+\begin{document}
+
+
+\section{Transmission Lines}
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{8pt}
+\rowcolors{3}{lightgray}{white}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{lllll}
+Métrica da linha                &           Expressão                                                                                                     &             Simplificação                                           \\ \toprule
+Onda de tensão                  & $V(x) = Ae^{-\gamma x} + Be^{\gamma x}$                                                                                 &                                                                     \\
+Onda de corrente                & $I(x) = \frac{A}{Z_0}e^{-\gamma x} + \frac{B}{Z_0}e^{\gamma x}$                                                         &                                                                     \\
+Impedância característica       & $Z_0 = \sqrt{\frac{R + j\omega L}{G + j\omega C}}$                                                                      &    $R = 0, G = 0 \implies Z_0 = \frac{L}{C}$                        \\
+Constante de propagação         & $\gamma = \alpha + j\beta$                                                                                              &                                                                     \\
+Coeficiente de ...              & $\Gamma = \frac{Be^{j\gamma x}}{Ae^{-\gamma x}} = \frac{B}{a}e^{2\gamma x}$                                             &    $\Gamma(x) = \Gamma_0 e^{2\gamma x} = \Gamma (0)e^{2\gamma x}$   \\
+Impedância de entrada           & $Z_{IN}(x) = \frac{V(x)}{I(x)} = Z_0 \frac{e^{\gamma x} + \Gamma_0 e^{\gamma x}}{e^{\gamma x} - \Gamma_0 e^{\gamma x}}$ &    $Z_{IN}(0) = Z_L = Z_0 \frac{1 + \Gamma_0}{1 - \Gamma_0}$        \\
+Coeficiente de ...              & $\Gamma_0 = \frac{Z_L - Z_0}{Z_L + Z_0}$                                                                                &                                                                     \\
+Efeito Pelicular                & $\delta = \frac{1}{2\pi}\sqrt{\frac{\rho}{f\mu_r}}$                                                                          & \\
+Frequência de Ressonãncia de um LC & $f_R = \frac{1}{2\pi \sqrt{LC}}$ & \\ 
+
+\bottomrule
+
+\end{tabular}
+\end{table}
+\end{document}
