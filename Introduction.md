@@ -46,6 +46,7 @@ Aulas de 1 hora + 30/45 min de exerc+icios
 
 ## Cap 1. Utilização de linhas de transmissão em circuitos RF
 Em RF:
+
 - Uso matrizes de parâmetros S e parâmetros T para caracterizar os circuitos
 - Os **circuitos amplificadores** convencionais não servem
 	- Não posso assumir que são instantâneos
