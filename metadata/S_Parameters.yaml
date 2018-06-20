@@ -1,0 +1,45 @@
+---
+titlepage: true
+titlepage-color: 806517
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 1
+
+title: "Parâmetros S"
+#subtitle: "Parasitas, Linhas de Transmissão"
+
+date: \today
+version: 0.1
+
+author: Pedro Martins
+email: martinspedro@ua.pt
+
+acknowledgements: Prof. Nuno Borges Carvalho
+
+university:
+    name: Aveiro University
+    url: http://www.ua.pt/
+
+department:
+    name: Departamento de Eletrónica, Telecomunicações e Informática
+    url: https://www.ua.pt/deti/
+
+
+toc-title: "Conteúdos"
+toc-depth: 5
+secnumdepth: 5
+
+fontsize: 10pt
+indent: true
+caption-justification: centering
+
+header-includes:
+  - \usepackage{multirow}
+  - \usepackage{booktabs}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{amsmath}
+  - \usepackage{gensymb}
+...
+
+
